@@ -1,10 +1,10 @@
 {% extends 'core/base.html' %}
 
-{% block title %} Home Page {% endblock %}
+{% block title %} Dashboard {% endblock %}
 
 {% block content %}
     <div class="mt-g px-6 py-12 bg-gray-100 rounded-xl">
-        <h2 class="mb-12 text-2xl text-center">Newest Items</h2>
+        <h2 class="mb-12 text-2xl text-center">New Items</h2>
         <div class="grid grid-cols-3 gap-3 w-2/3 mx-auto">
             {% for item in items %}
                 <div>
@@ -37,4 +37,5 @@
                 {% endfor %}
             </div>
         </div>
+    </div> 
 {% endblock %}
